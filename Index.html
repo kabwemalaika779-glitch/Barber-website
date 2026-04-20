@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elite Barber Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<header class="nav">
+
+<div class="logo">
+
+    <img src="images/logo.png.png" class="logo-icon">
+
+    <div class="logo-text">
+        <span class="elite">Elite</span>
+        <span class="barber">Barber Shop</span>
+    </div>
+
+</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+    <div class="hero-text">
+        <h1>Elite Barber Shop</h1>
+        <p>Your style, our passion</p>
+
+        <a href="https://wa.me/260977304535" class="btn" target="_blank">
+    Chat on WhatsApp
+</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="Images/barber.jpg.jpg" alt="barber">
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="services reveal">
+
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+    <img src="images/scissors.png.png" class="icon">
+
+    <h3>Haircuts</h3>
+
+    <p>Classic cuts and modern styles.</p>
+
+</div>
+
+<div class="card">
+
+    <img src="images/beard.png.png" class="icon">
+
+    <h3>Beard Trimming</h3>
+
+    <p>Shape and define your beard.</p>
+
+</div>
+
+<div class="card">
+
+    <img src="images/clipper.png.png" class="icon">
+
+    <h3>Hair Styling</h3>
+
+    <p>Professional styling for your look.</p>
+
+</div>
+
+    </div>
+
+</section>
+</section>
+<!-- PRICING -->
+<section class="pricing reveal">
+
+    <h2>Our Pricing</h2>
+
+    <div class="price-cards">
+
+        <div class="price-card">
+            <h3>Basic</h3>
+            <p class="price">K500</p>
+            <p>Simple 1-page website</p>
+            <p>Contact info included</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Standard</h3>
+            <p class="price">K1000</p>
+            <p>Multi-section website</p>
+            <p>Mobile friendly</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Premium</h3>
+            <p class="price">K1500</p>
+            <p>Full business website</p>
+            <p>Custom design</p>
+       </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact reveal">
+
+    <h2>Contact Us</h2>
+
+    <p>Phone: 0760134904</p>
+    <p>Location: Luanshya</p>
+
+</section>
+<script>
+    function revealOnScroll() {
+        let reveals = document.querySelectorAll(".reveal");
+
+        for (let i = 0; i < reveals.length; i++) {
+            let windowHeight = window.innerHeight;
+            let elementTop = reveals[i].getBoundingClientRect().top;
+            let elementVisible = 100;
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            }
+        }
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+</script>
+<a href="https://wa.me/260977304535" class="whatsapp-float" target="_blank">
+    💬
+</a>
+</body>
+</html>
